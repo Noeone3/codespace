@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameVerse - Games Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <h1>🎮 GameVerse</h1>
+        <a href="#mini-games" class="cta-link">Play Now</a>
+      </nav>
+      <div class="hero-content">
+        <h2>Your Website of Games</h2>
+        <p>
+          Explore featured games and play quick mini-games right in your browser.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section how-to" id="how-to-play">
+        <h3>How to Use This Site</h3>
+        <ol>
+          <li>Scroll to <strong>Mini Games</strong> or use the <strong>Play Now</strong> button.</li>
+          <li>
+            In <strong>Number Guess</strong>, enter a number from 1 to 20 and press
+            <strong>Guess</strong>.
+          </li>
+          <li>
+            In <strong>Tic-Tac-Toe</strong>, click an empty square to place your mark.
+            Players alternate turns (X then O).
+          </li>
+          <li>Use each game’s <strong>Reset</strong> button to start a new round anytime.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h3>Featured Games</h3>
+        <div class="game-grid">
+          <article class="game-card">
+            <h4>Sky Racers</h4>
+            <p>High-speed hover racing through neon cities and cloud tracks.</p>
+            <span class="tag">Racing</span>
+          </article>
+          <article class="game-card">
+            <h4>Dungeon Echo</h4>
+            <p>Team up and crawl through magical dungeons full of puzzles.</p>
+            <span class="tag">Adventure</span>
+          </article>
+          <article class="game-card">
+            <h4>Pixel Quest</h4>
+            <p>A retro action-platformer with hidden routes and boss battles.</p>
+            <span class="tag">Platformer</span>
+          </article>
+          <article class="game-card">
+            <h4>Galaxy Tactics</h4>
+            <p>Turn-based space strategy where every move shapes your empire.</p>
+            <span class="tag">Strategy</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="mini-games">
+        <h3>Mini Games</h3>
+        <div class="mini-games">
+          <article class="mini-card">
+            <h4>Number Guess</h4>
+            <p>Guess a random number between 1 and 20.</p>
+            <div class="guess-controls">
+              <input id="guessInput" type="number" min="1" max="20" placeholder="1-20" />
+              <button id="guessBtn">Guess</button>
+              <button id="resetGuessBtn" class="secondary">Reset</button>
+            </div>
+            <p id="guessMessage" class="message">Start guessing!</p>
+          </article>
+
+          <article class="mini-card">
+            <h4>Tic-Tac-Toe</h4>
+            <p>Classic two-player game. X starts first.</p>
+            <div id="board" class="board" aria-label="tic tac toe board"></div>
+            <div class="ttt-controls">
+              <p id="tttStatus" class="message">Current turn: X</p>
+              <button id="resetBoardBtn" class="secondary">Reset Board</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built for players. Press Start and have fun.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
